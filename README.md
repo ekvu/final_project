@@ -1,5 +1,7 @@
 ![cover](./images/spotify_cover.jpg)
 
+[Image](https://www.edmsauce.com/wp-content/uploads/2017/01/6360041936368655181636978495_shutterstock_200035424.jpg)
+
 # what's spoppin'?
 
 #### Author: Erin Vu
@@ -68,9 +70,12 @@ Below is the distribution of our target variable, popularity.
 
 ![pop_dist](./images/pop_dist.png)
 
+
 Below we can observe the correlations of the features with our target.
 
+
 ![pop_heat](./images/heatmap.png)
+
 
 ## Methods
 
@@ -82,11 +87,19 @@ The RMSE scores between the train and test set for our linear regression models 
 
 ![rmse](./images/rmse_scores.png)
 
+
 ![r2](./images/r2_scores.png)
+
+Below we can see the feature importances extracted from the random forest regression model. Artists and count has a huge impact on predicting popularity. The following images shows the importance while excluding those.
+
+![feat_impt_with](./images/ft_impt_with_artists.png)
+
+
+![feat_impt_without](./images/ft_impt_no_artists.png)
 
 ## Conclusions
 
-As a result of this project, I believe we can recommend music production studios to make new songs with popular artists and to make the songs lean on the side of not acoustic and have instruments included. Some reasons why this analysis might not fully solve the problem is due to the parameter tuning of the model and the size of the data. Subsetting the data and dividing it out into genre models will most likely lead to better predictions for specific songs, which is also a next step improvement on the project.
+As a result of this project, I believe we can recommend music production studios to make new songs with popular artists and to make the songs lean on the side of not acoustic and have instruments included. Some reasons why this analysis might not fully solve the problem is due to the parameter tuning of the model and the size of the data. Subsetting the data and dividing it out into genre models will most likely lead to better predictions for specific songs, which is also a next step improvement on the project. 
 
 ## For More Information
 
