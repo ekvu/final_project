@@ -113,6 +113,6 @@ Please review the full analysis in the [Jupyter Notebook](https://github.com/ekv
 ├── final.ipynb
 ├── final_presentation.pdf        
 ├── data                                
-├──  images     
+├── images     
 └── working_notebook
 ```
