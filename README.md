@@ -8,15 +8,17 @@
 
 ## Overview
 
-This project is an analysis and prediction of popularity of Spotify tracks from the Kaggle datset in order to provide music production companies with a good idea of the attributes of popular songs. As a result of iterating through linear regression and random forest regression models, the most impactful feature through random forest regression was acousticness and can recommend to not release primarily acoustic songs.
+This project is an analysis and prediction of popularity of Spotify tracks from the Kaggle datset in order to provide music production companies with a good idea of the attributes of popular songs. As a result of iterating through linear regression and random forest regression models, the most impactful feature through random forest regression was instrumentalness, duration, and acousticness, and can recommend to have produce songs with a mix of vocals and instruments.
 
 ## Business Problem 
 
-The business problem for our music production stakeholders is what attributes make a popular song. Music production companies need to know generally what people like to listen to, and with this project we can find those optimal features. We will be using linear regression and random forest regression to predict popularity of songs based on the feature data. With this information, production companies will be able to produce new popular songs.
+The business problem for our music production companies and producers, our stakeholders, is making popular songs and figuring out what attributes make a popular song. Music production companies and producers need to know generally what people like to listen to, and with this project we can find those optimal features. We will be using linear regression and random forest regression to predict popularity of songs based on the feature data. With this information, production companies will be able to produce new popular songs to build artists' profile, and fame.
 
 ## Data 
 
-The [Spotfy dataset from Kaggle](https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks) has almost 600,000 songs from the years 1922-2021, and has 20 columns. The target variable is Popularity and the other features wil be used to predict the target variable. The variables are listed below as they were in the dataset descriptionset on Kaggle and the main predictor variables for this will be the numerical features such as acousticness, danceability, energy, etc. To follow along with this repository, please fork this repository, and download the dataset from Kaggle into the /data folder.
+The [Spotfy dataset from Kaggle](https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks) has almost 600,000 songs from the years 1922-2021, and has 20 columns. The target variable is Popularity and the other features wil be used to predict the target variable. The variables are listed below as they were in the dataset description set on Kaggle and the main predictor variables for this will be the numerical features such as acousticness, danceability, energy, etc. These variables are relevant because the combinations are unique to each song and makes up a population score. A limitation for predicting popularity with this datset is predicting popularity for different age groups and user tastes as the dataset has a wide range of songs and people like different sounds and enjoy different sounds in different time periods.
+
+To follow along with this repository, please fork this repository, and download the dataset from Kaggle into the /data folder.
 
 #### Primary:
 
@@ -83,7 +85,7 @@ By using Python and it's packages such as numpy and pandas, we explored the data
 
 ## Results
 
-The RMSE scores between the train and test set for our linear regression models were almost the same, indicating that the training and test predictions performed roughly the same. The decision tree model also performed roughly the same on the training and validation set. The random forest regression model and the XGBoost models performed poorer on the validation set, indicating those models were overfit. The models were slightly over fit, but they still performed better than our baseline model and although the random forest regression cross validated model and the xgboost cross validated models scored similarly in RMSE, the random forest model performed much better on the test set when looking at our R2 scores. With these results, we are somewhat confident in our best model, the random forest regression model, and its ability generalize and predict popularity.
+Our evaluation metric in this project was mainly the RMSE score while also observing the r2 score. The RMSE score is a measure of the square root the mean squared error, which measures the average of the distances between the actual popularity and the predicted popularity. The goal for this project is to minimize that distance. The r2 score tells us what % of the variance is explained by the model and we try to get this value as high as possible. The RMSE scores for our linear regression models were almost the same, indicating that the training and test predictions performed roughly the same. The decision tree model also performed roughly the same on the training and validation set. The random forest regression model and the XGBoost models performed poorly on the validation set, indicating those models were overfit. Although the models were overfit, they still performed better than our baseline model. With these results, we are somewhat confident in our best model, the random forest regression model, and its ability generalize and predict popularity.
 
 ![rmse](./images/rmse_scores.png)
 
@@ -97,19 +99,20 @@ Below we can see the feature importances extracted from the random forest regres
 
 ## Conclusions
 
-As a result of this project, I believe we can recommend music production studios to make new songs with popular artists and to make the songs lean on the side of not being acoustic nor super quiet and have instruments included. Some reasons why this analysis might not fully solve the problem is due to the parameter tuning of the model and the size of the data. Subsetting the data and dividing it out into genre models or time based models will most likely lead to better predictions for popularity, which is also a next step improvement on the project. 
+As a result of this project, I believe we can recommend music production studios to make new songs with popular artists and to make the songs lean on the side of mixing in vocals with instruments. Some reasons why this analysis might not fully solve the problem is due to the size of the data and the parameter tuning of the model. Subsetting the data by years and dividing it out into different genre models will most likely lead to better predictions, which is also a next step for improvement on the project.
 
 ## For More Information
 
-Please review the full analysis in the [Jupyter Notebook](https://github.com/ekvu/whats_spoppin/blob/main/mvp_notebook.ipynb) or the [presentation](https://github.com/ekvu/whats_spoppin/blob/main/mvp_presentation.pdf). For any additional questions, please contact me at erin.vu94@gmail.com.
+Please review the full analysis in the [Jupyter Notebook](https://github.com/ekvu/whats_spoppin/blob/main/final.ipynb) or the [presentation](https://github.com/ekvu/whats_spoppin/blob/main/final_presentation.pdf). For any additional questions, please contact me at erin.vu94@gmail.com.
 
 ## Repository Structure
 
 ```
 ├── README.md                         
 ├── pickle
-├── mvp_notebook.ipynb
-├── mvp_presentation.pdf        
+├── final.ipynb
+├── final_presentation.pdf        
 ├── data                                
-└── images                             
+├──  images     
+└── working_notebook
 ```
