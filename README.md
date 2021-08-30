@@ -81,7 +81,7 @@ Below we can observe the correlations of the features with our target.
 
 ## Methods
 
-By using Python and it's packages such as numpy and pandas, we explored the data's features and their relationship to our target variable, popularity. After exploration, we used other libraries such as scikit-learn and xgboost to model our predictions. Within scikit-learn, we iterated through linear regression and random forest regression models to predict popularity. We then used xgboost to further explore other models that might improve our score. The metric used to evaluate the models were the RMSE score. The R2 score was also observed.
+By using Python and its packages such as numpy and pandas, we explored the data's features and their relationship to our target variable, popularity. After exploration, we used other libraries such as scikit-learn and xgboost to model our predictions. Within scikit-learn, we iterated through linear regression and random forest regression models to predict popularity. We then used xgboost to further explore other models that might improve our score. The metric used to evaluate the models were the RMSE score. The R2 score was also observed.
 
 ## Results
 
