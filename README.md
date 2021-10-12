@@ -103,7 +103,7 @@ As a result of this project, I believe we can recommend music production studios
 
 ## For More Information
 
-Please review the full analysis in the [Jupyter Notebook](https://github.com/ekvu/whats_spoppin/blob/main/final.ipynb) or the [presentation](https://github.com/ekvu/whats_spoppin/blob/main/final_presentation.pdf). For any additional questions, please contact me at erin.vu94@gmail.com.
+Please review the full analysis in the [Jupyter Notebook](https://github.com/ekvu/whats_spoppin/blob/main/final.ipynb) or the [presentation](https://github.com/ekvu/whats_spoppin/blob/main/final_presentation.pdf). For any additional questions, please contact me at erin_vu@pm.me.
 
 ## Repository Structure
 
