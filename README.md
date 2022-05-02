@@ -2,7 +2,7 @@
 
 [Image](https://www.edmsauce.com/wp-content/uploads/2017/01/6360041936368655181636978495_shutterstock_200035424.jpg)
 
-# what's spoppin'?
+# What's Spoppin'?
 
 #### Author: Erin Vu
 
